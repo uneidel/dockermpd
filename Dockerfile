@@ -50,6 +50,7 @@ COPY /services /etc/s6/services/
 COPY s6init.sh /etc/cont-init.d/
 
 # Some Fix
-RUN chmod +x /etc/s6/services/*.sh
+RUN chmod +x /var/run/s6/services/*.sh
+
 
 ENTRYPOINT ["/init"]
