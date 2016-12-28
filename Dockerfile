@@ -46,8 +46,6 @@ WORKDIR MPD_sima-$SIMA_VERSION
 # Entry point for mpc update and stuff
 EXPOSE 6600
 
-# Some Fix
-RUN chmod +x /etc/services.d/*.sh
 ADD root /
 
 ENTRYPOINT ["/init"]
