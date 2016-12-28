@@ -15,6 +15,7 @@ RUN apk -q update \
     && apk -q --no-progress add mpc="$MPC_VERSION" \
     && apk -q --no-progress add python3="$PYTHON_VERSION" \
     && apk -q --no-progress add curl \
+    && apk -q --no-progress add bash \
     && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /var/lib/mpd/music \

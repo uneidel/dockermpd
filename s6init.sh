@@ -1,1 +1,1 @@
-#!/usr/bin/with-contenv bash
+#!/bin/sh
